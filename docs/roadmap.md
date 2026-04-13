@@ -4,25 +4,26 @@ This public roadmap is intentionally high level.
 
 ## Current direction
 
-PREATOR is being developed as a serious business management SaaS with emphasis on:
+PREATOR continues to evolve as a business management SaaS with emphasis on:
 
-- operational coherence
+- stronger operational coherence
+- better product depth across modules
 - production readiness
-- billing and subscription flows
-- analytics depth
-- stronger internal connectivity between modules
+- richer analytics visibility
+- more mature billing and subscription handling
+- improved connectivity between areas of the system
 
-## Near-to-mid term themes
+## Ongoing themes
 
-- continued product hardening
-- richer operational workflows
-- deeper analytics and KPI visibility
+- product hardening
+- UX refinement
+- broader operational coverage
 - stronger scheduling and agenda capabilities
-- broader integration groundwork
-- ongoing UX refinement across modules
+- deeper analytics and KPI layers
+- continued integration groundwork
 
-## Notes
+## Scope of this document
 
-Internal phase names, implementation punchlists and private operational planning are not exposed in this public repository.
+This roadmap is meant to communicate direction, not internal execution detail.
 
-The purpose of this roadmap is to communicate product direction, not to publish internal execution details.
+Private implementation phases, internal punchlists and operational planning are intentionally not published in this repository.
