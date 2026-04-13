@@ -1,21 +1,24 @@
 # Architecture
 
-PREATOR uses a separated architecture oriented to a real SaaS deployment model.
+PREATOR is structured as a real SaaS product with clearly separated surfaces for backend, authenticated application and public website.
 
 ## Main layers
 
 ### 1. Backend API
 
-The backend is responsible for:
+The backend acts as the source of business logic and system coordination.
 
-- business logic
+Responsibilities include:
+
+- domain logic
 - authentication and authorization
 - billing coordination
-- data access and persistence
-- asynchronous processing
-- external integration points
+- persistence and data access
+- asynchronous work
+- integration entry points
 
 Main technologies:
+
 - Django
 - Django REST Framework
 - PostgreSQL
@@ -24,37 +27,55 @@ Main technologies:
 
 ### 2. Frontend application
 
-The authenticated application is built as a dedicated frontend layer that consumes the backend API and organizes the user-facing workflows of the product.
+The authenticated app is a separate frontend layer dedicated to product workflows and day-to-day user interaction.
+
+Responsibilities include:
+
+- operational navigation
+- module UX
+- settings and billing UI
+- product-level workflow execution
 
 Main technologies:
+
 - React
 - Vite
 - Tailwind CSS
 
 ### 3. Public website
 
-The public website is separated from the main app in order to support marketing, product positioning, pricing presentation and onboarding entry flows.
+The public website is intentionally separated from the product app so that communication, positioning, pricing and onboarding can evolve independently.
+
+Responsibilities include:
+
+- public product presentation
+- pricing communication
+- trial/onboarding entry
+- brand and positioning layer
 
 Main technology:
+
 - Next.js
 
 ## Supporting services
 
-The platform also relies on infrastructure and service layers such as:
+At a high level, PREATOR also relies on supporting infrastructure such as:
 
-- PostgreSQL for persistent product data
-- Redis/RQ for background work
-- Stripe for subscription billing
-- hosting and deployment infrastructure
-- email/provider services
+- PostgreSQL
+- Redis / background workers
+- Stripe
+- hosting and deployment services
+- email/provider infrastructure
 
-## Design intent
+## Architectural intent
 
-The architecture is intentionally split so that:
+This split is deliberate.
 
-- the public web can evolve independently from the app
-- the app can focus on authenticated workflows
-- the backend can remain the source of business logic
-- operational and billing concerns stay centralized
+It allows:
 
-This structure also supports a more professional product lifecycle than a single monolithic codebase used for every concern.
+- the backend to remain the center of logic
+- the product app to focus on authenticated operational UX
+- the public website to focus on communication and onboarding
+- billing and integrations to stay centralized in the application core
+
+The result is a more serious SaaS structure than a single undifferentiated codebase handling every concern in the same layer.
