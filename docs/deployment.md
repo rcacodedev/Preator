@@ -1,39 +1,38 @@
 # Deployment
 
-PREATOR is deployed as a multi-surface SaaS product with separate concerns for backend, authenticated frontend and public web.
+PREATOR is deployed as a multi-surface SaaS product rather than as a single static application.
 
-## High-level deployment model
+## Deployment model
 
-### Backend
-The backend API is deployed separately and is responsible for application logic, persistence, billing coordination and integrations.
+### Backend API
+The backend is deployed independently and is responsible for business logic, persistence, billing coordination, background jobs and integrations.
 
 ### Frontend application
-The authenticated app is deployed independently from the backend and consumes its API.
+The authenticated product UI is deployed separately from the backend and consumes its API.
 
 ### Public website
-The public website is deployed as its own surface, focused on product communication, pricing and onboarding.
+The public website is deployed as an independent surface focused on communication, positioning, pricing and onboarding.
 
-## Infrastructure
+## Supporting infrastructure
 
-At a high level, the platform uses:
+At a high level, the platform uses services such as:
 
 - backend hosting
-- public web/app hosting
+- frontend/public web hosting
 - PostgreSQL
-- Redis/RQ
+- Redis / worker infrastructure
 - Stripe
-- email/provider infrastructure
+- email/provider services
 
 ## Operational approach
 
-The project is handled as a product deployment rather than as a static portfolio app.
-
-This means deployment work includes concerns such as:
+PREATOR is handled as a real product deployment, which means operational work includes:
 
 - environment configuration
-- subscription flow validation
-- operational smoke checks
-- post-update verification
-- service health review
+- deployment validation
+- billing flow verification
+- smoke checks
+- post-update review
+- service health checks
 
-Specific production scripts, infrastructure details and private operational configuration are intentionally not included in this public repository.
+Specific production scripts, infrastructure paths, private operational setup and sensitive configuration are intentionally excluded from this public repository.
