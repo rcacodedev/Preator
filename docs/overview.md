@@ -1,29 +1,37 @@
 # Overview
 
-PREATOR is a business management SaaS designed to centralize operational work in a structured online environment.
+PREATOR is a business management SaaS built to centralize operational work in a more structured and coherent online environment.
 
-Its purpose is to reduce fragmentation between everyday business processes that are often split across spreadsheets, messaging, disconnected tools and manual follow-up.
+The product is designed for situations where business activity is often fragmented across spreadsheets, messaging, ad hoc follow-up and disconnected tools.
 
-The project is built around the idea that a management tool should not only store data, but also make operations clearer, more connected and easier to review.
+Rather than acting as a passive data container, PREATOR is intended to help connect workflows, surface priorities and reduce operational friction.
+
+## Product intent
+
+PREATOR is built around a simple idea:
+
+> business software should help teams operate with more clarity, not just store information.
+
+This means the product focuses on practical operational value across multiple connected areas, instead of treating each module as an isolated page or mini-tool.
 
 ## Core principles
 
-- operational clarity over feature noise
-- coherent workflows across modules
-- serious, production-oriented UX
-- modular architecture with room for growth
-- practical business value before superficial complexity
+- operational clarity over noise
+- coherent workflows over isolated features
+- serious product UX over improvised admin UI
+- production orientation over demo-only behavior
+- modular growth without losing consistency
 
-## Product direction
+## Functional direction
 
-PREATOR is focused on combining multiple operational areas into one system:
+PREATOR currently revolves around:
 
 - inventory and stock visibility
-- purchasing and supplier flows
-- sales and financial document flows
+- purchasing and supplier workflows
+- sales and financial documents
 - agenda and operational timing
-- KPI tracking and analytics
-- integrations and automation groundwork
-- subscription and organization management
+- KPIs and analytics
+- integrations and webhook groundwork
+- billing and organization management
 
-Rather than treating these as isolated blocks, the product aims to connect them through shared context, navigation and business logic.
+The product direction is not just to add modules, but to make those modules feel part of one system.
