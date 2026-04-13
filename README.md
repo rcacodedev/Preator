@@ -1,47 +1,76 @@
 # PREATOR
 
-PREATOR is a web-based business management SaaS focused on day-to-day operational control for small and medium teams.
+**PREATOR** is a production-oriented business management SaaS built to centralize day-to-day operations in a single online system.
 
-It brings together inventory, purchasing, sales, agenda, analytics, integrations and billing in a single product designed to be practical, structured and production-oriented.
+It brings together inventory, purchasing, sales, agenda, analytics, integrations and billing into one coherent product experience.
 
-**Public website:** [preator.es](https://preator.es)
+**Website:** [preator.es](https://preator.es)
 
 ---
 
-## What PREATOR is
+## What this repository is
 
-PREATOR is not a template project or a UI prototype. It is a real SaaS product built around operational workflows that businesses need to manage consistently:
+This repository is a **public showcase** for PREATOR.
+
+Its purpose is to explain:
+
+- what the product is
+- what business areas it covers
+- what technical stack supports it
+- how the platform is structured at a high level
+- what kind of product and architecture work has been built
+
+This repository **does not include the private source code** of PREATOR.
+
+---
+
+## Product overview
+
+PREATOR is designed as a serious online management tool rather than a collection of disconnected admin screens.
+
+The product is built around operational coherence across multiple business areas:
 
 - stock and product structure
-- purchasing flows
-- sales and financial documents
-- agenda and operational reminders
-- analytics and KPI visibility
-- integrations and webhook-based connectivity
-- subscription billing and plan control
+- purchasing workflows
+- sales and financial document flows
+- agenda and reminders
+- KPI visibility
+- integrations and webhook groundwork
+- subscription billing and organization settings
 
-The goal is to provide a serious online tool that feels coherent across modules, not a disconnected set of screens.
-
----
-
-## Product scope
-
-PREATOR is currently structured around the following areas:
-
-- **Home / Cockpit**: operational overview, priorities, quick access and business signals
-- **Inventory**: stock visibility, movements, products, warehouses and categories
-- **Purchases**: purchase orders, receipts, supplier invoices and payment-linked flows
-- **Sales & Finance**: quotes, delivery notes, invoices, financial visibility and document workflows
-- **Agenda**: calendar-oriented operational planning and reminders
-- **KPIs / Analytics**: business metrics and operational insight
-- **Integrations**: webhook endpoints, deliveries and external connectivity groundwork
-- **Billing & Settings**: plans, subscription management, team and organization settings
+The goal is to provide a practical system that helps teams manage operations with more structure, visibility and continuity.
 
 ---
 
-## Stack
+## Main product areas
 
-PREATOR is built with a modern SaaS-oriented stack:
+### Home / Cockpit
+A central operational summary layer focused on visibility, priorities and quick actions.
+
+### Inventory
+Stock visibility, product structure, movement context, warehouses and related organization.
+
+### Purchases
+Purchase orders, receipts, supplier-side flows and operational purchasing control.
+
+### Sales & Finance
+Quotes, delivery notes, invoices and financially relevant document workflows.
+
+### Agenda
+Calendar-oriented operational planning, reminders and time-based business visibility.
+
+### KPIs / Analytics
+Structured business metrics and operational insight.
+
+### Integrations
+Webhook-based connectivity groundwork and external integration patterns.
+
+### Billing & Settings
+Plan visibility, subscription management, organization settings and team-related configuration.
+
+---
+
+## Technical stack
 
 ### Backend
 - Python
@@ -51,12 +80,12 @@ PREATOR is built with a modern SaaS-oriented stack:
 - Redis + RQ
 - Stripe
 
-### Frontend app
+### Frontend application
 - React
 - Vite
 - Tailwind CSS
 
-### Public web
+### Public website
 - Next.js
 
 ### Deployment
@@ -65,56 +94,41 @@ PREATOR is built with a modern SaaS-oriented stack:
 
 ---
 
-## Architecture at a high level
+## High-level architecture
 
-PREATOR is split into three main surfaces:
+PREATOR is structured as three main surfaces:
 
 1. **Backend API**
-   - domain logic
+   - business logic
    - authentication
-   - billing logic
+   - billing coordination
    - operational modules
-   - async jobs and integrations
+   - background jobs and integrations
 
 2. **Frontend application**
    - authenticated product UI
-   - module navigation
-   - operational workflows
+   - module workflows
    - settings and billing UX
+   - operational navigation
 
 3. **Public website**
-   - product positioning
-   - pricing and trial flow
-   - public onboarding entry points
+   - positioning
+   - pricing
+   - onboarding entry flow
+   - product communication
 
-Supporting services include PostgreSQL, Redis/RQ, Stripe and email/provider infrastructure.
+Supporting services include PostgreSQL, Redis/RQ, Stripe and external provider infrastructure.
 
 More detail is available in [`docs/architecture.md`](docs/architecture.md).
 
 ---
 
-## Why this repository exists
-
-This repository is a **public showcase** for PREATOR.
-
-It is intended to show:
-
-- what the product is
-- what kind of SaaS architecture and product thinking is behind it
-- what modules and workflows have been built
-- how the project is positioned technically and functionally
-
-This repository **does not include the private source code** of the product.
-
----
-
 ## Screenshots
 
-Screenshots and product visuals will be added in:
+Screenshots will be added progressively to this repository.
 
-- [`assets/screenshots/`](assets/screenshots/)
+Planned set:
 
-Recommended set:
 - public home
 - pricing
 - dashboard / cockpit
@@ -123,11 +137,15 @@ Recommended set:
 - sales / finance
 - billing / settings
 
+Assets live in:
+
+- [`assets/screenshots/`](assets/screenshots/)
+
 ---
 
 ## Documentation
 
-Additional documentation:
+Additional project overview:
 
 - [Overview](docs/overview.md)
 - [Modules](docs/modules.md)
@@ -139,9 +157,24 @@ Additional documentation:
 
 ## Current status
 
-PREATOR is an active product project with a real public-facing website and a production-oriented application stack.
+PREATOR is an active product project with:
 
-This public repository is maintained as a product and architecture showcase rather than as an open-source codebase.
+- a public-facing website
+- a production-oriented backend and frontend architecture
+- subscription billing
+- operational product modules
+- ongoing product hardening and evolution
+
+This public repository is maintained as a **product and architecture showcase**, not as an open-source release.
+
+---
+
+## Rights and ownership
+
+All product rights, branding and implementation rights related to PREATOR are reserved by the author.
+
+This repository is provided for informational and showcase purposes only.  
+No private product source code is published here.
 
 ---
 
@@ -149,4 +182,4 @@ This public repository is maintained as a product and architecture showcase rath
 
 Built by **Rafael Cuevas**.
 
-For product context and public positioning, visit [preator.es](https://preator.es).
+For public product context, visit [preator.es](https://preator.es).
